@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ancecode">
+    <meta name="description" content="website to simplify locating rental houses where you want to live">
+    <meta name="" content="">
+    <meta name="" content="">
+    <meta name="" content="">
+    <meta name="" content="">
+    <link type="text/css" rel="stylesheet" href="assets/css/style1.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/responce.css">
+    <link type="icon" href="assets/images/logo.png">
+
+    <title> home </title>
+</head>
+
+<body class="main">
+    <div class="backimage">
+        <div class="backhider">
+            <!--header section-->
+            <?php include 'assets/includes/header.html' ?>
+            <header>
+                <div class="upperheader">
+                    <div class="logo">
+                        <img src="assets/images/rhlogo.png" height="100%" width="100%" alt="LOGO">
+                    </div>
+                    <div class="heading">
+                        <h3>
+                            <i><span class="initial">RENTAL HOUSE</span><span class="center"> LOCATOR</span></i>
+                            <span class="last">easier and faster</span>
+                        </h3>
+                    </div>
+                    <div class="userprofile">
+                        <div class="userimage"><a href="#">
+                                <img src="assets/images/user.jpg" height="100%" width="100%">
+                            </a>
+                        </div>
+                        <div class="user_login">
+                            welcome<br>
+                            ancecode billy
+                        </div>
+                    </div>
+                </div>
+                <div class="lowerheader">
+
+                    <div class="headerlink">
+                        <ul>
+                            <li><a href="index.html"> Home</a></li>
+                            <li><a href="#"> Find House </a></li>
+                            <li><a href="explore.html"> Explore </a></li>
+                            <li><a href="#"> Upload </a></li>
+                            <form>
+                                <input type="text" id="search" name="search" placeholder="Search..." size="28" reired>
+                                <button>Search</button>
+                            </form>
+                            <li><a href="#"> Sign in </a></li>
+                            <li><a href="#"> Sign out </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <!--header section end-->
+
+            <!--main section satrt-->
+
+            <section>
+                <div class="upload_form">
+
+                    <!-- //User_ID Upload_ID image_url House_Number House_Type HouseLocation Rent Description Uploaded_at -->
+                    <span style="color: rgba(252, 115, 3, 0.856); font-family:cursive"> <i>Fill All Fields To Upload
+                            House/Room Details </i></span> <br><br>
+                    <form action="" method="POST">
+                        <div>
+                            <label for="house number"> House Number <br>
+                                <input type="number" name="HouseNumber" size="10" required="required"> <br><br>
+                            </label>
+                            <label for="House type"> House Type <br>
+                                <input type="radio" name="HouseType" value="Single Room" required="required"> <span
+                                    style="color: #030303;"> Single
+                                    Room </span> <br>
+                                <input type="radio" name="HouseType" value="Master Room" required="required"> <span
+                                    style="color: #030303;"> Master
+                                    Room </span><br>
+                                <input type="radio" name="HouseType" value="Double Room" required="required"> <span
+                                    style="color: #030303;"> Double
+                                    Room </span><br>
+                                <input type="radio" name="HouseType" value="Hostel" required="required"> <span
+                                    style="color: #030303;"> Hostel </span><br><br>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="text" name="HouseLocation" placeholder="House Location" maxlength="50"
+                                size="32" required="required"><br>
+                        </div>
+                        <div>
+                            <input type="text" name="Rent" placeholder="Rent(Example 50,000/= TSh Per Month)"
+                                maxlength="30" size="32" required="required"> <br>
+                        </div>
+                        <div>
+                            <label for="House Image"> Upload House/Room Image <br>
+                                <input type="file" name="HouseImage" size="20" required="required"><br><br><br>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="description"> Description <br>
+                                <textarea name="description"
+                                    placeholder="Provide Description On House/Room You Want To Upload" rows="5"
+                                    cols="55" maxlength="300" required="required"></textarea> <br><br>
+                            </label>
+                        </div>
+                        <div class="upload_button">
+                            <input type="submit" name="upload" value="Upload">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!--main section ends-->
+
+    <!--footer section-->
+    <br>
+    <footer>
+        <section class="lastsection">
+            <div>
+
+                <img src="assets/images/rhlogo.png" height="19%" width="19%" alt="LOGO">
+
+                <ul>
+                    <li><a href="about.html"> About Us </a></li>
+                    <li><a href="contact.html"> Contact Us </a></li>
+                    <li><a href="#"> Suport Us </a></li>
+                    <li><a href="#"> Become Partner </a></li>
+                </ul>
+            </div>
+            <div>
+
+                <h2>
+                    Useful Links
+                </h2>
+
+                <ul>
+                    <li><a href="explore.php"> Explore </a></li>
+                    <li><a href="houses.html"> Find House </a></li>
+                    <li><a href="upload.html"> Uploads </a></li>
+                    <li><a href="contact.html"> Leave comment</a></li>
+                    <li><a href="most_asked.html"> FAQs </a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>
+                    Contact Info
+                </h2>
+                <ul >
+                    <li> Phone: +255 679 677 310</li>
+                    <li>
+                        <Address> POBox ...., Bar Es Salaam, Kigamboni</Address>
+                    </li>
+                    <li>Email: <a href="mailto:laurancendingo29@gmail.com">laurancendingo29@gmail.com </a></li>
+                    <ul style="display: inline;">
+                    <li>
+                        <a style="font-size: 40px; padding: 18px; color:rgb(27, 123, 179)"
+                            href="https://www.linkedin.com/in/laurance-ndingo-aabb70254/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a style="font-size: 40px; padding: 18px; color:rgb(3, 170, 78)"
+                            href="https://wa.me.message/UONPQBNUTBC2J1"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <div class="last_div">
+            <a href="#"> Terms and conditions</a>
+            <br><br>
+            &#169 2024 Copyright
+        </div>
+    </footer>
+    <!--footer section end-->
+</body>
+
+</html>
